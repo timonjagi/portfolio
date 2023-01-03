@@ -2,6 +2,11 @@
 	import Loader from '../components/Loader.svelte';
 	import { fade } from 'svelte/transition';
 	import me from '$lib/assets/img/me.jpeg';
+
+	import hygraph from '$lib/assets/logos/hygraph.png';
+	import svelte from '$lib/assets/logos/svelte.png';
+	import tailwindcss from '$lib/assets/logos/tailwindcss.png';
+
 	export let data;
 	const projects = (data && data.projects) || [];
 </script>
@@ -151,4 +156,34 @@
 			</div>
 		</div>
 	</section>
+
+	<div class="container my-24 px-6 mx-auto">
+		<!-- Section: Design Block -->
+		<section class="mb-32 text-gray-800 text-center">
+			<style>
+				.grayscale {
+					filter: grayscale(100%);
+				}
+			</style>
+			<h2 class="text-3xl font-bold mb-12">Built using</h2>
+
+			<div class="grid md:grid-cols-3 lg:grid-cols-3 gap-6 items-center">
+				<div class="mb-12 lg:mb-0">
+					<img src={svelte} class="img-fluid grayscale px-6 md:px-12" alt="Svelte kit - logo" />
+				</div>
+
+				<div class="mb-12 lg:mb-0">
+					<img
+						src={tailwindcss}
+						class="img-fluid grayscale px-6 md:px-12"
+						alt="Tailwindcss UI  - logo"
+					/>
+				</div>
+
+				<div class="mb-12 lg:mb-0">
+					<img src={hygraph} class="img-fluid grayscale px-6 md:px-12" alt="Hygraph - logo" />
+				</div>
+			</div>
+		</section>
+	</div>
 </div>
