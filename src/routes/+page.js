@@ -1,6 +1,8 @@
 
 export const load = async ({ fetch }) => {
   const res = await fetch('/projects')
-  const projects = res.json();
+  const projects = await res.json();
+
   return projects;
+
 }

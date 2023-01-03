@@ -11,7 +11,8 @@
 				<li><a href={`${slug}`}>{title}</a></li>
 			{/each} -->
 
-			<li><a href="/blog">Projects</a></li>
+			<li><a href="/about">About</a></li>
+			<li><a href="/projects">Projects</a></li>
 			<li><a href="/blog">Blog</a></li>
 		</ul>
 
