@@ -31,6 +31,6 @@
 	"type": "module",
 	"dependencies": {
 		"markdown-it": "^13.0.1",
-		"theme-change": "^2.2.0"
+		"theme-change": "^2.5.0"
 	}
 }
